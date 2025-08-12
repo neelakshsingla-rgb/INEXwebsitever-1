@@ -5,7 +5,7 @@
   
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0c6a3a" />
+  <meta name="theme-color" content="#0f6d3d" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
@@ -15,7 +15,7 @@
   
 <header class="site-header">
   <a class="brand" href="index.html" aria-label="INEX home">
-    <img src="assets/logo.svg" alt="INEX logo">
+    <img class="brandmark" src="assets/logo.svg" alt="INEX logo">
     <span>INEX</span>
   </a>
   <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
@@ -31,33 +31,35 @@
   </nav>
 </header>
 
-  <main class="page">
-    <header class="page-header">
-      <h1>Contact</h1>
-      <p>Looking for a quick consulting call? Let’s block some time.</p>
-    </header>
+  
+<main class="page">
+  <header class="page-header">
+    <h1>Contact</h1>
+    <p>Looking for a quick consulting call? Let’s block some time.</p>
+  </header>
 
-    <section>
-      <form class="contact-form" name="contact" method="post" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
-        <div class="form-grid">
-          <label>Full name
-            <input required name="name" type="text" autocomplete="name">
-          </label>
-          <label>Email
-            <input required name="email" type="email" autocomplete="email">
-          </label>
-          <label>Company
-            <input name="company" type="text" autocomplete="organization">
-          </label>
-          <label>How can we help?
-            <textarea required name="message" rows="5" placeholder="Tell us about your process, goals, and timelines"></textarea>
-          </label>
-        </div>
-        <button class="btn primary" type="submit">Send message</button>
-      </form>
-    </section>
-  </main>
+  <section>
+    <form class="contact-form" name="contact" method="post" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <div class="form-grid">
+        <label>Full name
+          <input required name="name" type="text" autocomplete="name">
+        </label>
+        <label>Email
+          <input required name="email" type="email" autocomplete="email">
+        </label>
+        <label>Company
+          <input name="company" type="text" autocomplete="organization">
+        </label>
+        <label>How can we help?
+          <textarea required name="message" rows="5" placeholder="Tell us about your process, goals, and timelines"></textarea>
+        </label>
+      </div>
+      <button class="btn primary" type="submit">Send message</button>
+    </form>
+  </section>
+</main>
+
   
 <footer class="site-footer">
   <div class="footer-grid">
